@@ -11,7 +11,9 @@ function buildStuff(folder, distPath, generateMap = true) {
     if (generateMap) {
         tsResult = tsResult.pipe(sourcemaps.init())
     }
-    tsResult = tsResult.pipe(project());
+    tsResult = tsResult
+        .pipe(project())
+        .on("error", function() { process.exit(1); });
 
     var js = tsResult.js;
     if (generateMap) {
@@ -40,7 +42,7 @@ gulp.task("build", ["build-src"], function() {
             "./dist/*.d.ts"
         ])
         .pipe(zip('typescript-simpleevents.zip'))
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest("./dist/"))
 });
 
 gulp.task("build-tests", ["build"], function () {

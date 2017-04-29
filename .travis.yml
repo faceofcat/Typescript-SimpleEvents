@@ -5,7 +5,9 @@ node_js:
 before_script:
 - npm install -g gulp
 - npm install
-script: gulp build-tests
+script:
+- gulp build-tests
+- mocha
 deploy:
   provider: releases
   api_key:
