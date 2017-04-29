@@ -14,7 +14,7 @@ import { expect } from "chai";
         let marker: string = undefined;
         event.on(() => { marker = "set"; });
         event.trigger();
-        expect(marker).to.equal("set");
+        expect(marker).to.equal("fail");
     }
 
     @test "Test Detaching Single Event"() {
