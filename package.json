@@ -19,6 +19,7 @@
   "homepage": "https://github.com/faceofcat/Typescript-SimpleEvents#readme",
   "devDependencies": {
     "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-mocha": "^4.3.1",
     "gulp-sourcemaps": "^2.6.0",
