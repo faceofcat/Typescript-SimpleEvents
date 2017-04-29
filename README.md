@@ -1,4 +1,7 @@
 # Typescript-SimpleEvents
+
+[![Build Status](https://travis-ci.org/faceofcat/Typescript-SimpleEvents.svg?branch=master)](https://travis-ci.org/faceofcat/Typescript-SimpleEvents)
+
 Very very simple events system for type/java script.
 
 Installation
