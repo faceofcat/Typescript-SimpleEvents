@@ -1,0 +1,19 @@
+{
+  "name": "typescript-simpleevents",
+  "version": "1.0.0",
+  "description": "Simple events interfaces for typescript.",
+  "main": "./dist/simpleevents.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faceofcat/Typescript-SimpleEvents.git"
+  },
+  "author": "Face of Cat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faceofcat/Typescript-SimpleEvents/issues"
+  },
+  "homepage": "https://github.com/faceofcat/Typescript-SimpleEvents#readme"
+}

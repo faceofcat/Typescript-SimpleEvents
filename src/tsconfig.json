@@ -1,0 +1,12 @@
+{
+    // "extends": "../tsconfig-base.json", <-- not supported by gul-typescript :(
+    "compilerOptions": {
+        // "outFile": "simpleevents.js",
+        "target": "ES5",
+        "strict": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "declaration": true,
+        "noEmitOnError": true
+    }
+}

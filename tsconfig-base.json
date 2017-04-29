@@ -1,0 +1,15 @@
+{
+    "include": [
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "./**/d.ts"
+    ],
+    "compilerOptions": {
+        "target": "ES5",
+        "strict": true,
+        "sourceMap": true,
+        "module": "amd",
+        "declaration": true
+    }
+}

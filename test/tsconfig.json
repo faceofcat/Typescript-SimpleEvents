@@ -1,0 +1,12 @@
+{
+    // "extends": "../tsconfig-base.json", <-- not supported by gul-typescript :(
+    "compilerOptions": {
+        "target": "ES5",
+        "strict": false, // <-- because mocha-typescript is bad :(
+        "sourceMap": false,
+        "module": "commonjs",
+        "declaration": false,
+        "noEmitOnError": true,
+        "experimentalDecorators": true
+    }
+}
