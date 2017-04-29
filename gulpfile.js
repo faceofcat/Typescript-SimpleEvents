@@ -27,10 +27,6 @@ function buildStuff(folder, distPath, generateMap = true) {
     );
 }
 
-gulp.task("build-tests", ["build"], function () {
-    return buildStuff("test", "test", false);
-});
-
 gulp.task("build-src", function() {
     return buildStuff("src", "dist");
 });
@@ -45,6 +41,10 @@ gulp.task("build", ["build-src"], function() {
         ])
         .pipe(zip('typescript-simpleevents.zip'))
         .pipe(gulp.dest("./dist/"));
+});
+
+gulp.task("build-tests", ["build"], function () {
+    return buildStuff("test", "test", false);
 });
 
 gulp.task("run-tests", ["build", "build-tests"], function () {
