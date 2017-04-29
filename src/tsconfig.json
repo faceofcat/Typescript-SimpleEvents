@@ -1,5 +1,5 @@
 {
-    // "extends": "../tsconfig-base.json", <-- not supported by gul-typescript :(
+    // "extends": "../tsconfig-base.json", <-- not supported by gulp-typescript :(
     "compilerOptions": {
         // "outFile": "simpleevents.js",
         "target": "ES5",

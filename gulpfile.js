@@ -3,6 +3,7 @@ var ts = require("gulp-typescript");
 var sourcemaps = require("gulp-sourcemaps");
 var merge = require('merge2');
 var mocha = require('gulp-mocha');
+var zip = require('gulp-zip');
 
 function buildStuff(folder, distPath, generateMap = true) {
     var project = ts.createProject("./" + folder + "/tsconfig.json");
@@ -30,8 +31,20 @@ gulp.task("build-tests", ["build"], function () {
     return buildStuff("test", "test", false);
 });
 
-gulp.task("build", function() {
+gulp.task("build-src", function() {
     return buildStuff("src", "dist");
+});
+
+
+gulp.task("build", ["build-src"], function() {
+    return gulp.src([
+            "./src/*.ts",
+            "./dist/*.js",
+            "./dist/*.js.map",
+            "./dist/*.d.ts"
+        ])
+        .pipe(zip('typescript-simpleevents.zip'))
+        .pipe(gulp.dest("./dist/"));
 });
 
 gulp.task("run-tests", ["build", "build-tests"], function () {

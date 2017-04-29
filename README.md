@@ -10,6 +10,11 @@ In order to install it you can run:
 $ npm install -g typescript-simpleevents
 ```
 
+or, to install it locally:
+```sh
+$ npm install -D typescript-simpleevents
+```
+
 Usage
 ------------
 
