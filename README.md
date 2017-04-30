@@ -21,6 +21,7 @@ $ npm install -D typescript-simpleevents
 
 Usage
 ------------
+For more information check the [wiki](https://github.com/faceofcat/Typescript-SimpleEvents/wiki).
 
 In javascript (node.js, not browser) you can:
 ```javascript
