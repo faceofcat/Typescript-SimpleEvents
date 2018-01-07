@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/faceofcat/Typescript-SimpleEvents.svg?branch=master)](https://travis-ci.org/faceofcat/Typescript-SimpleEvents)
 [![npm version](https://badge.fury.io/js/typescript-simpleevents.svg)](https://www.npmjs.com/package/typescript-simpleevents)
+[![npm downloads](https://img.shields.io/npm/dt/typescript-simpleevents.svg)](https://www.npmjs.com/package/typescript-simpleevents)
 
 Very very simple events system for type/java script.
 
